@@ -1,11 +1,21 @@
 @import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+}
 
+@font-face {
+  font-family: "SVN-Product Sans Regular";
   font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: local("SVN-Product Sans Regular"), url("/fonts/SVN-Product Sans Regular") format("ttf");
 }
 
 a,
