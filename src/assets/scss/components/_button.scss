@@ -1,0 +1,54 @@
+@import "./variables";
+
+.primary-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 14px;
+  gap: 10px;
+
+  width: 101px;
+  height: 36px;
+  background: $primary-color;
+  color: $white-color;
+  backdrop-filter: blur(12px);
+
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  &:hover {
+    background: #a10000;
+  }
+  &:focus {
+    background: $primary-color;
+    box-shadow: 0px 0px 0px 4px rgba(194, 0, 0, 0.16);
+    border-radius: 8px;
+  }
+  &:disabled {
+    background: #e69191;
+    /* Blurs/sm */
+    backdrop-filter: blur(4px);
+  }
+}
+
+.gray-link {
+  color: #667085;
+
+  span {
+    font-size: $font-size-common;
+    font-weight: $font-700;
+  }
+  //dua chuot vao
+  &:hover,
+  &:visited {
+  }
+
+  &:disabled {
+    color: #d0d5dd;
+  }
+  &:focus {
+    color: #c20000;
+  }
+}
