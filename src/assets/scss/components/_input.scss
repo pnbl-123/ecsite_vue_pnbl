@@ -1,0 +1,69 @@
+@import './variables';
+
+.primary-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 14px;
+  gap: 14px;
+
+  width: 320px;
+  height: 48px;
+
+  color: $primary-text-color;
+  background: $white-color;
+
+  border: 1px solid #d0d5dd;
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  &:focus {
+    box-shadow: 0px 0px 0px 4px rgba(71, 109, 146, 0.16);
+    outline: none;
+  }
+  &:disabled {
+    box-shadow: 0px 0px 0px 4px rgba(71, 109, 146, 0.16);
+    box-shadow: none;
+    background: #FCFCFD;
+    color: #667085;
+  }
+}
+
+//disabled input vs disabled textare trong specs dang ko deu nhau
+
+.primary-textarea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 14px;
+  gap: 8px;
+
+  width: 320px;
+  height: 128px;
+
+  background: #ffffff;
+
+  border: 1px solid #d0d5dd;
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  &:focus {
+    box-shadow: 0px 0px 0px 4px rgba(71, 109, 146, 0.16);
+    outline: none;
+  }
+  &:disabled {
+    box-shadow: 0px 0px 0px 4px rgba(71, 109, 146, 0.16);
+    box-shadow: none;
+    background: #FCFCFD;
+    color: #667085;
+  }
+}
