@@ -1,39 +1,27 @@
 @import "./base.css";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  width: 100%;
+  overflow-y: auto;
 }
 
 #app {
-  min-height: 100%;
+  min-height: 100vh;
+  min-width: 374px;
   width: 100%;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
-  padding: 0 !important;
+  flex: 1 1 auto;
 }
 
 @font-face {
   font-family: "SVN-Product Sans Regular";
-  font-weight: normal;
+  src: url("../../fonts/SVN-Product\ Sans\ Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
   font-display: auto;
   unicode-range: U+000-5FF;
-  src: local("SVN-Product Sans Regular"), url("/fonts/SVN-Product Sans Regular") format("ttf");
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
 }
