@@ -1,0 +1,14 @@
+{
+    "home": "home",
+    "login":"Login",
+    "about": "About",
+    "services": "Services",
+    "news": "News",
+    "case_studies": "Case studies",
+    "contact": "Contact",
+    "career": "Career",
+
+    "vi-VN": "Vietnamese",
+    "en-US": "English",
+    "ja-JP": "Japanese"
+}

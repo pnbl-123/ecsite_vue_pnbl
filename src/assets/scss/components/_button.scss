@@ -35,20 +35,7 @@
 
 .gray-link {
   color: #667085;
-
-  span {
-    font-size: $font-size-common;
-    font-weight: $font-700;
-  }
-  //dua chuot vao
-  &:hover,
-  &:visited {
-  }
-
-  &:disabled {
-    color: #d0d5dd;
-  }
-  &:focus {
-    color: #c20000;
-  }
+  font-size: $font-size-common;
+  font-weight: $font-700;
+  text-decoration: none;
 }

@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar.vue";
   <header>
     <Navbar />
   </header>
-  <main class="flex-1">
+  <main class="d-flex flex-fill bg-primary">
     <RouterView />
   </main>
   <footer><h1>THis is footer</h1></footer>
